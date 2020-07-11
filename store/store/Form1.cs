@@ -18,6 +18,11 @@ namespace store
             InitializeComponent();
         }
 
-        SqlConnection conexion = new SqlConnection(@"Data Source=()")
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Class_conectar_bd.Conectar();
+            MessageBox.Show("Conexion exitosa");
+        }
     }
 }
